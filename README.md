@@ -1,16 +1,52 @@
-# news_app
+# News App
 
-New App
+A Flutter news application that displays the latest articles in Business, Science, and Sports. The app features a clean UI, dark mode support, and search functionality.
+
+## Features
+
+- Browse news by category: Business, Science, Sports
+- Search for news articles
+- Toggle between light and dark mode
+- State management using Bloc (flutter_bloc)
+- Persistent theme preference with SharedPreferences
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK
+- Dart
+- Android Studio or VS Code
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+```bash
+   git clone https://github.com/khalidhamza/flutter_news_app.git
+   cd flutter_news_app
+   ```
+2. Install dependencies:
+```bash
+   flutter pub get
+   ```
+3. Run the app:
+```bash
+   flutter run
+   ```
+
+
+## Project Structure
+
+- `lib/layout/home_layout.dart` - Main layout with navigation and theme toggle
+- `lib/cubit/` - Bloc Cubit and states for app logic
+- `lib/screens/` - News category and search screens
+- `lib/components.dart` - Reusable UI components
+
+## Dependencies
+
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc)
+- [shared_preferences](https://pub.dev/packages/shared_preferences)
+
+## License
+
+This project is licensed under the MIT License.
